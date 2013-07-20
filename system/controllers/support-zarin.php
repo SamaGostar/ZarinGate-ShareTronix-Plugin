@@ -12,7 +12,7 @@ require_once('helpers/nusoap.php');
 	$amount = $_POST['amount']; //Amount will be based on Toman
 	$callBackUrl = $C->SITE_URL."verify-support";
 
-	$client = new nusoap_client('https://www.zarinpal.com/pg/services/WebGate/wsdl', 'wsdl');
+	$client = new nusoap_client('https://de.zarinpal.com/pg/services/WebGate/wsdl', 'wsdl');
 	$res = $client->call('PaymentRequest', array(
 	array(
 					'MerchantID' 	=> $merchantID ,
