@@ -34,6 +34,7 @@ require_once('helpers/nusoap.php');
 	{
 		$this->redirect("https://www.zarinpal.com/pg/StartPay/" . $res->Authority . "/ZarinGate");
 	}else{
+		echo'ERR: '.$res->Status;
 	$D->err = TRUE;
 	}
 }else{
